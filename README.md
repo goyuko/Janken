@@ -1,2 +1,2 @@
 # Janken
-Janken project that I did on Colt's python course on Udemy
+Janken project that I did on Udemy's "The Modern Python 3 Bootcamp" by Colt Steele

@@ -1,0 +1,25 @@
+import random # random needs to be imported to use randomness
+# the above can be written as "from random import randint" if you only need the randint functionality from random package. Then the random.randint() below can be shorten as randint()
+rand_num = random.randint(0,2) # random number between 0 to 2 is generated
+if rand_num == 0:
+	computer = "rock"
+elif rand_num == 1:
+	computer = "paper"
+else:
+	computer = "scissors"
+print("Rock, paper, scissors...")
+p = input("Player, choose from rock, paper, or scissors: ").lower() # player 1 types one of the three and p1 becomes that # lower function turns the string into lower case
+print(f"Computer selected: {computer}") # format function let's you put variable into print function
+if p == "rock" or "paper" or "scissors": # to make sure input is typed correctly
+	if p == computer:
+		print("Draw!")
+	elif p == "rock" and computer == "scissors":
+		print("Player Wins")
+	elif p == "scissors" and computer == "paper":
+		print("Player Wins")
+	elif p == "paper" and computer == "rock":
+		print("Player Wins!")
+	else:
+		print("Computer Wins!")
+else:
+	print("Type correctly")
